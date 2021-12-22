@@ -25,7 +25,7 @@
                         bindings = <
    &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp TAB   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
         &kp LGUI    &kp LCTRL    &kp SPACE   &kp SPACE      &mo 1    &mo 2
                         >;
                 };
@@ -33,13 +33,13 @@
                 raise_layer {
                         label = "1";
 // -----------------------------------------------------------------------------------------
-// |   ~  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL  |
-// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |  `   |
+// |   `  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL  |
+// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
 // |      |  _  |  +  |  {  |  }  | "|" |   |     | LFT | DWN |  UP | RGT |      |
 //                    |     |     |     |   |     |     | ALT |
                         bindings = <
-   &kp TILDE &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &kp DEL
-   &trans    &kp N1    &kp N2    &kp N3    &kp N4   &kp N5      &kp N6    &kp N7    &kp N8          &kp N9   &kp N0    &kp GRAVE
+   &kp GRAVE &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &kp DEL
+   &trans    &kp N1    &kp N2    &kp N3    &kp N4   &kp N5      &kp N6    &kp N7    &kp N8          &kp N9   &kp N0    &trans
    &trans    &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE    &trans    &kp LEFT  &kp DOWN        &kp UP   &kp RIGHT &trans
                                  &trans    &trans   &trans      &trans    &trans    &kp RALT
                         >;
